@@ -31,9 +31,7 @@
     {
       "name": "Books",
       "urls": [
-        "/books",
-        "/books/search/**",
-        "/book/**"
+        "/**"
       ],
       "cacheConfig": {
         "strategy": "freshness",
