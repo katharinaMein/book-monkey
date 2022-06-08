@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1654697971920,
+  "timestamp": 1654700783356,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -56,7 +56,24 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "Books",
+      "patterns": [
+        "\\/secure\\/books",
+        "\\/secure\\/books\\/search\\/.*",
+        "\\/secure\\/book\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": 93600000,
+      "timeoutMs": 3000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/365.js": "5287a1fa0355fe537da496b773adebe715422dae",
     "/534.js": "b71cb57b285b60d32f876c2314e0525fdb5ade4d",
